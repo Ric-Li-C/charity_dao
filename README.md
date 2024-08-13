@@ -10,8 +10,7 @@
 
 **前端：**
 
--   React + TypeScript + Vite
--   Rainbowkit + Wagmi
+-   React + TypeScript + Vite + Rainbowkit + Wagmi
 
 **后端：**
 
@@ -70,6 +69,6 @@
 | 链接条目 | 链接地址                                |
 | -------- | --------------------------------------- |
 | 介绍 PPT | <准备中>                                |
-| 源码仓库 | https://github.com/linghuccc/charityDao |
+| 源码仓库 | https://github.com/Ric-Li-C/charity_dao |
 | 演示视频 | <准备中>                                |
 | 在线体验 | <准备中>                                |
