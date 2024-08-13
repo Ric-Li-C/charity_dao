@@ -1,50 +1,75 @@
-# React + TypeScript + Vite
+# Charity DAO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+慈善 DAO
 
-Currently, two official plugins are available:
+## 项目概述
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+一个支持多链的，为普通人 / 编程小白准备的，为了慈善目的而发行代币 / NFT 的 DAO 平台。
 
-## Expanding the ESLint configuration
+## 技术架构
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**前端：**
 
-- Configure the top-level `parserOptions` property like this:
+-   React + TypeScript + Vite
+-   Rainbowkit + Wagmi
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+**后端：**
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+-   Foundry + Solidity
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 核心功能
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+整个项目分为 **2 个部分**：
+
+**1. DAO 审核员部分**
+
+根据登录身份的不同，可执行的操作如下：
+
+-   任何人
+
+    -   可以查看 DAO 审核员名单及其信息；
+
+-   非审核员
+
+    -   可以申请新审核员身份；
+
+-   审核员
+    -   可以修改自身相关信息；
+    -   可以批准 / 驳回新申请;
+    -   可以质疑现有审核员（提交不信任提案）；
+    -   可以赞成 / 反对不信任提案；
+    -   可以退出审核员身份；<br><br>
+
+**2. 慈善项目部分**
+
+根据登录身份的不同，可执行的操作如下：
+
+-   任何人
+
+    -   可以查看已发行项目及其信息；
+    -   可以申请发行新代币 / NFT 慈善项目；
+
+-   审核员
+
+    -   可以批准 / 驳回新项目申请;
+
+-   被授权的项目发起人
+
+    -   可以发行新代币 / NFT 慈善项目。
+
+## 项目团队
+
+[Ric Li C](https://github.com/Ric-Li-C)
+
+-   Twitter: [@Ric_Li_C](https://twitter.com/Ric_Li_C)
+-   Telegram: [@ric_li_c](https://t.me/ric_li_c)
+-   Email: ric.li.c@hotmail.com
+
+## 项目链接
+
+| 链接条目 | 链接地址                                |
+| -------- | --------------------------------------- |
+| 介绍 PPT | <准备中>                                |
+| 源码仓库 | https://github.com/linghuccc/charityDao |
+| 演示视频 | <准备中>                                |
+| 在线体验 | <准备中>                                |
