@@ -1,0 +1,16 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+
+[rpc_endpoints]
+sepolia = "${SEPOLIA_RPC_URL}"
+bsc-testnet = "${BSC_TESTNET_RPC_URL}"
+mumbai = "${MUMBAI_RPC_URL}"
+
+[etherscan]
+sepolia = { key = "${ETHERSCAN_KEY}" }
+bsc-testnet = { key = "${BSC_ETHERSCAN_KEY}" }
+mumbai = { key = "${MUMBAI_ETHERSCAN_KEY}" }
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
